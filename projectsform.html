@@ -43,7 +43,7 @@
  
      <main>
          
-         <form id="create_update_project" method="post" action="/event">       <!-- TODO -->      <!-- action and method depend on C vs U.-->
+         <form id="create_update_project" method="post" action="/project">       <!-- TODO -->      <!-- action and method depend on C vs U.-->
              <input type="hidden" name="project_id" id="project_id" value="0"> 
              <!-- server sets project_id value-->
          
@@ -73,12 +73,22 @@
                                          </select>
                                      <label for="project_type">Project Type</label>
                                  </div>
+
+                                 <div class = "input-field col s6">
+                                     <input type = "text" id = "tech_stack" class = "materialize-textarea", data-length="225">
+                                     <label for="tech_stack">Tech Stack</label> 
+                                 </div>
                              </div>
                  
                              <div class="row">
-                                 <div class = "input-field col s4">
+                                 <div class = "input-field col s6">
                                      <input type="text" id=project_proposed_date name="project_proposed_date" class="datepicker no-autoinit" required>
-                                     <label for="event_date">Date Proposed</label>
+                                     <label for="project_proposed_date">Date Proposed</label>
+                                 </div>
+
+                                 <div class = "input-field col s6">
+                                    <input type="text" id=group_members name="group_members" class-"materialize-textarea">
+                                    <label for="group_members">Group Members</label>
                                  </div>
                  
                                  <!--<div class="input-field col s4">
@@ -96,8 +106,8 @@
                  
                              <div class="row">
                                  <div class="input-field col s12">
-                                 <textarea id="event_description" class="materialize-textarea" data-length="500"></textarea>
-                                 <label for="event_description">Description</label>
+                                 <textarea id="project_description" class="materialize-textarea" data-length="500"></textarea>
+                                 <label for="project_description">Description</label>
                                  </div>
                              </div>
  
